@@ -87,10 +87,10 @@ chisq.test(text.freq, p = probs)
 # N - 15
 # R - 20
 # O - 20
-text.Verzani.freq = c(38, 42, 15, 20, 20)/302
+text.Verzani.freq = c(38, 42, 15, 20, 20)
 probs = c(29, 21, 17, 17, 16)/100
 chisq.test(text.Verzani.freq, p = probs)
-# p-value = 0.99 > alpha = 0.05 => accept H0 (hypothesis that this text is from the English language)
+# p-value = 0.429 < alpha = 0.05 => reject H0 (hypothesis that this text is from the English language)
 
 ## Example: 
 # Company printed baseball cards.
@@ -104,10 +104,10 @@ chisq.test(text.Verzani.freq, p = probs)
 # See whether our sample distribution differed significantly from
 # the distribution claimed by the company?
 # Use a 0.05 level of significance.
-cards.freq = c(50, 45, 5)/100
+cards.freq = c(50, 45, 5)
 probs = c(30, 60, 10)/100
 chisq.test(cards.freq, p = probs)
-# p-value = 0.9067 > alpha = 0.05 => accept H0
+# p-value = 0.0005592 < alpha = 0.05 => reject H0
 
 ## Chi Squared tests of independence
 # http://stattrek.com/chi-square-test/independence.aspx?Tutorial=AP
